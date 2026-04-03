@@ -33,7 +33,7 @@ const Loader = () => (
 
 const Navbar = () => (
     <nav className="navbar">
-        <div className="navbar-logo">FLEXIA</div>
+        <a href="#hero" className="navbar-logo" style={{ textDecoration: 'none', color: 'inherit' }}>FLEXIA</a>
         <div className="navbar-links">
             <a href="#problema">Problema</a>
             <a href="#pilares">Solución</a>

@@ -3,7 +3,7 @@ import VisualSplit from '../VisualSplit';
 import { initHero } from '../../utils/BabylonLogic';
 
 const Hero = () => (
-    <section className="hero">
+    <section id="hero" className="hero">
         <VisualSplit
             isFullPage={true}
             babylonInit={initHero}
