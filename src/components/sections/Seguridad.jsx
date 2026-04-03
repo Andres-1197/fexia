@@ -1,7 +1,7 @@
 import React from 'react';
 import { Shield, Lock, Eye, Activity } from 'lucide-react';
 import { initSeguridad } from '../../utils/BabylonLogic';
-import VisualSplit from '../VisualSplit';
+import BabylonScene from '../BabylonScene';
 
 const Seguridad = () => {
     const items = [
@@ -15,7 +15,9 @@ const Seguridad = () => {
         <section id="seguridad" className="section container">
             <div className="section-grid">
                 <div className="seguridad-visual">
-                    <VisualSplit height="500px" babylonInit={initSeguridad} />
+                    <div className="section-visual" style={{ height: '500px' }}>
+                        <BabylonScene onSceneReady={initSeguridad} />
+                    </div>
                 </div>
 
                 <div className="seguridad-copy">

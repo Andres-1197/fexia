@@ -1,7 +1,7 @@
 import React from 'react';
 import { Shield, Zap, Sparkles } from 'lucide-react';
 import { initPilar } from '../../utils/BabylonLogic';
-import VisualSplit from '../VisualSplit';
+import BabylonScene from '../BabylonScene';
 
 const Pilares = () => {
     const pillars = [
@@ -42,7 +42,7 @@ const Pilares = () => {
                 {pillars.map((p, idx) => (
                     <div key={idx} className="feature-card">
                         <div className="pilar-visual-container" style={{ height: '250px', marginBottom: '2rem', borderRadius: '15px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.05)' }}>
-                            <VisualSplit height="250px" babylonInit={p.init} />
+                            <BabylonScene onSceneReady={p.init} />
                         </div>
                         <div className="feature-icon">{p.icon}</div>
                         <h3>{p.title}</h3>

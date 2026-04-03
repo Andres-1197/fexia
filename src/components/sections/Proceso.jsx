@@ -1,6 +1,6 @@
 import React from 'react';
 import { initProceso } from '../../utils/BabylonLogic';
-import VisualSplit from '../VisualSplit';
+import BabylonScene from '../BabylonScene';
 
 const Proceso = () => {
     const steps = [
@@ -29,7 +29,9 @@ const Proceso = () => {
                 </div>
 
                 <div className="proceso-visual">
-                    <VisualSplit height="500px" babylonInit={initProceso} />
+                    <div className="section-visual" style={{ height: '500px' }}>
+                        <BabylonScene onSceneReady={initProceso} />
+                    </div>
                 </div>
             </div>
         </section>

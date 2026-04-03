@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { initTraditional, initFexia } from '../../utils/BabylonLogic';
-import VisualSplit from '../VisualSplit';
+import BabylonScene from '../BabylonScene';
 
 const Problema = () => (
     <section id="problema" className="section">
@@ -19,11 +19,15 @@ const Problema = () => (
                 <div className="problema-visual-row" style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
                     <div className="comparison-box">
                         <h4 style={{ marginBottom: '10px', fontSize: '12px', opacity: 0.6 }}>IA TRADICIONAL</h4>
-                        <VisualSplit height="200px" babylonInit={initTraditional} />
+                        <div className="section-visual" style={{ height: '200px' }}>
+                            <BabylonScene onSceneReady={initTraditional} />
+                        </div>
                     </div>
                     <div className="comparison-box active">
                         <h4 style={{ marginBottom: '10px', fontSize: '12px', color: 'var(--primary)' }}>ECOSISTEMA FEXIA</h4>
-                        <VisualSplit height="200px" babylonInit={initFexia} />
+                        <div className="section-visual" style={{ height: '200px' }}>
+                            <BabylonScene onSceneReady={initFexia} />
+                        </div>
                     </div>
                 </div>
             </div>
