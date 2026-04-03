@@ -150,6 +150,30 @@
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(255, 255, 255, 0.02);
 }
 
+.terminal-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    letter-spacing: -0.02em;
+}
+
+.terminal-desc {
+    font-size: 1.1rem;
+    color: #aaa;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+}
+
+.highlight {
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /* Hero Content Styles */
 .hero-content-wrapper {
     position: relative;
@@ -175,21 +199,6 @@
     margin-bottom: 24px;
     display: block;
     opacity: 0.8;
-}
-
-.hero-title {
-    font-family: 'Outfit', sans-serif;
-    font-size: clamp(48px, 6vw, 90px);
-    font-weight: 900;
-    line-height: 0.95;
-    color: #fff;
-    margin-bottom: 32px;
-    letter-spacing: -0.03em;
-}
-
-.hero-title em {
-    font-style: italic;
-    color: var(--primary);
 }
 
 .hero-body {

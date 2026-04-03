@@ -17,9 +17,9 @@ const Hero = () => (
                     className="hero-text-pane"
                 >
                     <span className="hero-eyebrow">FExIA: Inteligencia Interconectada. Gobernanza orquestada.</span>
-                    <h1 className="hero-title">
+                    <h1 className="terminal-title">
                         El Manifiesto <br />
-                        <em style={{ fontSize: '0.8em' }}>Arquitectura de razonamiento</em>
+                        <span className="highlight" style={{ fontSize: '0.8em' }}>Arquitectura de razonamiento</span>
                     </h1>
                     <p className="hero-body">
                         Diseñamos la arquitectura de razonamiento que su organización necesita para operar a una escala superior.
