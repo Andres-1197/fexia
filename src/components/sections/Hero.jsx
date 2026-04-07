@@ -2,12 +2,13 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronRight, ArrowRight } from 'lucide-react';
 import VisualSplit from '../VisualSplit';
+import { initHero } from '../../utils/BabylonLogic';
 
 const Hero = () => (
     <section id="hero" className="hero">
         <VisualSplit
             isFullPage={true}
-            splineScene="https://prod.spline.design/JogrHLCxXLfOr0SG/scene.splinecode"
+            babylonInitRight={initHero}
         >
             <div className="hero-content-wrapper">
                 <motion.div
@@ -36,3 +37,4 @@ const Hero = () => (
 );
 
 export default Hero;
+

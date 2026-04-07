@@ -2,7 +2,7 @@ import React, { Suspense } from 'react';
 import Spline from '@splinetool/react-spline';
 import BabylonScene from './BabylonScene';
 
-const VisualSplit = ({ babylonInit, splineScene, height = "100%", isFullPage = false, children }) => {
+const VisualSplit = ({ babylonInit, babylonInitRight, splineScene, height = "100%", isFullPage = false, children }) => {
     return (
         <div className={isFullPage ? "hero-visual-container" : "section-visual"} style={{ height }}>
             <div className="visual-left visual-pane">
@@ -16,7 +16,13 @@ const VisualSplit = ({ babylonInit, splineScene, height = "100%", isFullPage = f
             </div>
             {!isFullPage && <div className="pane-separator"></div>}
             <div className="visual-right visual-pane">
-                {splineScene && (
+                {babylonInitRight && (
+                    <BabylonScene
+                        className="hero-babylon-right"
+                        onSceneReady={babylonInitRight}
+                    />
+                )}
+                {splineScene && !babylonInitRight && (
                     <div className="hero-spline">
                         <Suspense fallback={<div className="loading-placeholder">Loading...</div>}>
                             <Spline scene={splineScene} />
@@ -29,3 +35,4 @@ const VisualSplit = ({ babylonInit, splineScene, height = "100%", isFullPage = f
 };
 
 export default VisualSplit;
+
