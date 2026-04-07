@@ -25,10 +25,7 @@ const Hero = () => (
                         Una red de agentes de IA especializados que conocen tu empresa desde adentro. No
                         una herramienta — una infraestructura cognitiva.
                     </p>
-                    <div className="hero-actions">
-                        <button className="btn btn-primary">Agendar diagnóstico</button>
-                        <button className="btn btn-outline">Ver cómo funciona ↓</button>
-                    </div>
+
 
                 </motion.div>
             </div>

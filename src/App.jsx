@@ -41,11 +41,11 @@ const Navbar = () => (
             <a href="#orquestacion">Orquestación</a>
             <a href="#gobernanza">Gobernanza</a>
         </div>
-        <button className="navbar-cta">Contactar <ChevronRight size={16} /></button>
+        <div></div>
         <div className="navbar-mobile-menu">
             <Menu />
         </div>
-    </nav>
+    </nav >
 );
 
 function App() {

@@ -20,14 +20,7 @@ const ConsultoriaCierre = () => (
                 <p className="terminal-desc" style={{ fontSize: '1.4rem', margin: '3rem 0 4rem 0', fontStyle: 'italic', color: '#fff' }}>
                     "Orquestación de alto nivel para una escala global. Evolucione hacia una infraestructura de inteligencia interconectada bajo el máximo rigor normativo."
                 </p>
-                <div className="cta-actions" style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center' }}>
-                    <button className="btn btn-primary" style={{ padding: '1.2rem 3rem' }}>
-                        Agendar Diagnóstico <ChevronRight size={20} />
-                    </button>
-                    <button className="btn btn-outline" style={{ padding: '1.2rem 3rem' }}>
-                        Descargar Presentación
-                    </button>
-                </div>
+
             </motion.div>
         </div>
     </section>
