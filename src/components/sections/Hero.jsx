@@ -17,19 +17,19 @@ const Hero = () => (
                     transition={{ duration: 0.8 }}
                     className="hero-text-pane"
                 >
-                    <span className="hero-eyebrow">FExIA: Inteligencia Interconectada. Gobernanza orquestada.</span>
+                    <span className="hero-eyebrow">Ecosistema Agéntico — Enterprise</span>
                     <h1 className="terminal-title">
-                        El Manifiesto <br />
-                        <span className="highlight" style={{ fontSize: '0.8em' }}>Arquitectura de razonamiento</span>
+                        El sistema nervioso de tu empresa. <span className="highlight">Activado.</span>
                     </h1>
                     <p className="hero-body">
-                        Diseñamos la arquitectura de razonamiento que su organización necesita para operar a una escala superior.
-                        Sustituimos los procesos aislados por un ecosistema vivo, capaz de evolucionar y resolver de forma autónoma.
+                        Una red de agentes de IA especializados que conocen tu empresa desde adentro. No
+                        una herramienta — una infraestructura cognitiva.
                     </p>
                     <div className="hero-actions">
-                        <button className="btn btn-primary">Iniciar Transformación <ChevronRight size={18} /></button>
-                        <button className="btn btn-outline">Explorar Ecosistema <ArrowRight size={18} /></button>
+                        <button className="btn btn-primary">Agendar diagnóstico</button>
+                        <button className="btn btn-outline">Ver cómo funciona ↓</button>
                     </div>
+
                 </motion.div>
             </div>
         </VisualSplit>
